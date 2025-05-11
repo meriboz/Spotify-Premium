@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Buy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-logo">
+            <a href="#"><img src="images/spotifyLogo-removebg-preview.png"></a>
+        </div>
+
+        <ul class="nav-links">
+            <li class="active"><a href="#" >Premium</a></li>
+            <li class="links"><a href="#" >Destek</a></li>
+            <li class="links"><a href="#" >İndir</a></li>
+             <li class="links"><a href="#" >Kaynak</a></li>
+            <li class="links"><a href="#" > Profile</a></li>     
+        </ul>
+
+        <ul class="nav-links2 nav-links">
+            <div class="profile">
+            <img src="images/ab67757000003b82f2fc4ac99941b2fa4a2cc4c7.jpg" >
+        </div><span style="color: #25fc54;"> | </span>
+            <li class="links"><a href="#" >Hesap</a></li>
+            <li class="links"><a href="#" >Oturum Kapat</a></li>
+        </ul>
+    </nav>
+
+    <span class="blur"></span>
+    <span class="blur"></span>
+    <span class="blur2"></span>
+    <span class="blur2"></span>
+
+    <header class="container">
+        <h1 id="typewriter"></h1>
+        <p>Bir Premium planı seç ve telefonunda, hoparlöründe ve diğer cihazlarında sınırsız ve reklamsız müzik dinle. Çeşitli ödeme yöntemlerinden dilediğini seç. İstediğin zaman iptal et.</p>
+
+        <script>
+            const text = "Her duruma uygun, ekonomik planlar";
+            let i = 0;
+            const speed = 100;
+
+            function typeWriter() {
+            if (i < text.length) {
+                document.getElementById("typewriter").textContent += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+            }
+
+            window.onload = typeWriter;
+        </script>
+
+
+        <div class="wrapper">
+            <div class="item item1"><img src="images/Vısa.png" ></div>
+            <div class="item item2"><img src="images/Garanti-BBVA.png" ></div>
+            <div class="item item3"><img src="images/papara.png"></div>
+            <div class="item item4"><img src="images/QNB-Logo.png" ></div>
+            <div class="item item5"><img src="images/vakifbank.png" ></div>
+            <div class="item item6"><img src="images/Ziraat_Bankası.png" ></div>
+        </div>
+    </header>
+
+    <section class="buy-container">
+        <div class="buy-box">
+        <div class="card">
+                <h2><i class="fa-brands fa-spotify"></i>  Premium</h2>
+                <h1 class="header">Bireysel</h1>
+                <h4>3 ay boyunca ₺59,99</h4>
+                <span class="line"></span>
+                <div class="icerik">
+                    <h3><i class="fa-solid fa-check"></i> 1 Premium Hesap</h3>
+                    <h3><i class="fa-solid fa-check"></i> İstediğin zaman iptal et</h3>
+                </div>
+                <p>İlk 3 ay boyunca ₺59,99, sonra ayda ₺59,99. Premium Bireysel için tekrar hoş geldin teklifi..</p>
+
+                <button class="btn" onclick="changeText('Bireysel')" >Premium'u devam ettir</button>
+        </div>
+
+         <div class="card">
+
+                <h2><i class="fa-brands fa-spotify"></i>  Premium</h2>
+                <h1 class="ogrenci header">Öğrenci</h1>
+                <h4>₺32,99 / ay</h4>
+                <span class="line"></span>
+                <div class="icerik">
+                    <h3><i class="fa-solid fa-check"></i> Doğrulanmış 1 Premium hesabı</h3>
+                    <h3><i class="fa-solid fa-check"></i> Koşulları sağlayan öğrenciler için indirim</h3>
+                    <h3><i class="fa-solid fa-check"></i> İstediğin zaman iptal et</h3>
+                </div>
+               
+                <p>Teklif, yalnızca geçerli yükseköğretim kurumlarındaki öğrenciler içindir. Koşullar geçerlidir.</p>
+                <button class="btn" onclick="changeText('Öğrenci')">Premium Öğrenci planı edin</button>
+        </div>
+
+         <div class="card">
+           
+                <h2><i class="fa-brands fa-spotify"></i>  Premium</h2>
+                <h1 class="duo header">Duo</h1>
+                <h4>₺79,99 / ay</h4>
+                <span class="line"></span>
+                <div class="icerik">
+                    <h3><i class="fa-solid fa-check"></i> 2 Premium hesap</h3>
+                    <h3><i class="fa-solid fa-check"></i> İstediğin zaman iptal et</h3>
+                </div>
+              
+                <p>Aynı adreste yaşayan çiftler için. Koşullar geçerlidir.</p>
+                <button class="btn" onclick="changeText('Duo')" >Premium Duo planını edin</button>
+        </div>
+
+
+         <div class="card">
+       
+                <h2><i class="fa-brands fa-spotify"></i>  Premium</h2>
+                <h1 class="aile header">Aile</h1>
+                <h4>₺99,99 / ay</h4>
+                <span class="line"></span>
+                <div class="icerik">
+                    <h3><i class="fa-solid fa-check"></i> 6 Premium hesabı</h3>
+                    <h3><i class="fa-solid fa-check"></i>Sansürsüz olarak işaretlenen içerikleri
+                        kontrol et</h3>
+                    <h3><i class="fa-solid fa-check"></i> İstediğin zaman iptal</h3>
+                </div>
+                
+                <p>Aynı adreste oturan en fazla 6 aile üyesi için. Koşullar geçerlidir.</p>
+                <button class="btn"onclick="changeText('Aile')">Premium Aile planını edin</button>
+        </div>
+    </div>
+    </section>
+
+    <div class="tbl-text">
+        <h1>Tüm Premium Planlarına Dahil Olan Avantajlar:</h1>
+        <p>Premium'a geç ve dinleyeceğine yalnızca sen karar ver. İstediğin zaman iptal et.</p>
+    </div>
+
+<table border="1" cellspacing="0" cellpadding="10">
+  <thead>
+    <tr>
+      <th>Özellikler</th>
+      <th>Spotify Free</th>
+      <th>Spotify Premium</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Reklamsız müzik dinle</td>
+      <td>Hayır</td>
+      <td><i class="fa-solid fa-circle-check"></i>Evet</td>
+    </tr>
+    <tr>
+      <td>İndir ve çevrimdışı dinle</td>
+      <td>Hayır</td>
+      <td><i class="fa-solid fa-circle-check"></i>Evet</td>
+    </tr>
+    <tr>
+      <td>Şarkıları istediğin sırada çal</td>
+      <td>Hayır</td>
+      <td><i class="fa-solid fa-circle-check"></i>Evet</td>
+    </tr>
+    <tr>
+      <td>Yüksek ses kalitesi</td>
+      <td>Normal</td>
+      <td><i class="fa-solid fa-circle-check"></i>Evet</td>
+    </tr>
+    <tr>
+      <td>Arkadaşlarınla aynı anda dinle</td>
+      <td>Hayır</td>
+      <td><i class="fa-solid fa-circle-check"></i>Evet</td>
+    </tr>
+    <tr>
+      <td>Dinleme sırasını düzenle</td>
+      <td>Hayır</td>
+      <td><i class="fa-solid fa-circle-check"></i>Evet</td>
+    </tr>
+  </tbody>
+</table>
+
+
+    <div class="premium-benefits">
+  <ul>
+    <li><i class="fa-solid fa-circle-check"></i> Reklamsız müzik dinle</li>
+    <li><i class="fa-solid fa-circle-check"></i> İndir ve çevrimdışı dinle</li>
+    <li><i class="fa-solid fa-circle-check"></i> Şarkıları istediğin sırada çal</li>
+    <li><i class="fa-solid fa-circle-check"></i> Arkadaşlarınla aynı anda dinle</li>
+    <li><i class="fa-solid fa-circle-check"></i> Dinleme sırasını düzenle</li>
+  </ul>
+</div>
+
+
+
+ <footer class="container">
+
+        <div class="column">
+            <div class="logo"> <i class="fa-brands fa-spotify"></i> Spotify</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+
+         <div class="column">
+            <h4>Şirket</h4>
+            <a href="#">Hakkında</a>
+            <a href="#">Kariyer</a>
+            <a href="#">For the Record</a>
+        </div>
+
+        <div class="column">
+            <h4>Planlar</h4>
+            <a href="#">Premium Bireysel</a>
+            <a href="#">Premium Duo</a>
+            <a href="#">Premium Aile</a>
+            <a href="#">Premium Öğrenci</a>
+        </div>
+
+        <div class="column">
+            <h4>Topluluklar</h4>
+            <a href="#">Sanatçılar İçin</a>
+            <a href="#">Geliştiriciler</a>
+            <a href="#">Reklam</a>
+            <a href="#">Yatırımcılar</a>
+            <a href="#">Satıcılar</a>
+
+        </div>
+    </footer>
+
+     <div class="copyright">
+       &copy; 2023 AsmrProg Channel. All Rights Reserved.
+    </div>
+
+
+
+  <script src="script.js"></script>
+
+   
+</body>
+</html>

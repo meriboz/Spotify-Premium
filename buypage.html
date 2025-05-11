@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Satın Al</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-logo">
+            <a href="index.html"><img src="images/spotifyLogo-removebg-preview.png"></a>
+        </div>
+
+        <ul class="nav-links">
+            <li class="active"><a href="#"  onclick="changeContent('Bireysel')" >Premium</a></li>
+            <li class="links"><a href="#"  onclick="changeContent('Bireysel')">Bireysel</a></li>
+            <li class="links"><a href="#" onclick="changeContent('Öğrenci')" >Öğrenci</a></li>
+             <li class="links"><a href="#" onclick="changeContent('Duo')" >Duo</a></li>
+            <li class="links"><a href="#"  onclick="changeContent('Aile')"> Aile</a></li>     
+        </ul>
+
+        <ul class="nav-links2 nav-links">
+            <div class="profile">
+            <img src="images/ab67757000003b82f2fc4ac99941b2fa4a2cc4c7.jpg" >
+        </div><span style="color: #25fc54;"> | </span>
+            <li class="links"><a href="#" >Hesap</a></li>
+            <li class="links"><a href="#" >Oturum Kapat</a></li>
+        </ul>
+    </nav>
+
+    <span class="blur"></span>
+    <span class="blur"></span>
+    <span class="blur2"></span>
+    <span class="blur2"></span>
+
+
+    
+    <div class="kredi-cardpage">
+
+    <section class="form-container" >
+        <div class="form-content">
+            <h1><i class="fa-brands fa-spotify"></i> Spotify Premium Satın Alma </h1>
+            <h2>Kart Türünü seçiniz</h2>
+
+            <div class="box-credicard">
+                <label>
+                    <input type="radio" name="card" value="visa" id="visaCard">
+                    <img src="images/Vısa-removebg-preview.png">
+                </label>
+                <label>
+                    <input type="radio" name="card" value="papara" id="paparaCard">
+                    <img src="images/papararemove.png">
+                </label>
+                <label>
+                    <input type="radio" name="card" value="garanti" id="garantiCard">
+                    <img src="images/Garanti-BBVA-removebg-preview.png" style="width: 100px;">
+                </label>
+            </div>
+
+            <form method="post" action="">
+                <h2>Kart Sahibinin Ad & Soyadı</h2>  
+                <input type="text" name="name" placeholder="Ad & Soyad" >  
+
+                <h2>Kart Numarası</h2>  
+                <input type="text" name="cardnumber" id="cardNumberInput" placeholder=" 0000 0000 0000 0000"  >  
+
+            <div class="rowinput-container">
+                <div class="input-group">
+                    <h2>Son kullanma tarihi</h2>
+                    <input type="text" name="date"  id="expiryInput"  class="gridinput"  placeholder="Aa / yy" >
+                </div>
+
+                <div class="input-group">
+                    <h2>Güvenlik Kodu</h2>
+                    <input type="password" name="password" class="gridinput"  id="cvvInput"  placeholder="CVV" maxlength="3">
+                </div>
+            </div>
+
+        </form>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="onaykutusu">
+                        Ön Bilgilendirme Koşulları'nı ve Mesafeli Satış Sözleşmesi'ni kabul ediyorum.
+                    </label>
+                </div>
+
+
+        </div>
+    </section>
+
+
+
+    <div class="grid-card-item">
+ 
+         <div class="card-items">
+        <div class="kredi-card" id="krediCardBox">
+            <div class="card-header">
+
+                <div class="cip">
+                    <img src="images/cip-removebg-preview.png">
+                 </div>
+
+                    <div id="cardLogo" class="logo">
+                
+                     </div>  
+            </div>
+
+            <div class="card-content">
+                <div class="row">
+                    <label>Kart Numarası</label>
+                    <input type="text" class="card-number"  id="cardNumberDisplay" placeholder="0000 0000 0000 0000" readonly>
+                </div>
+
+                <div class="row card-expire">
+                    <div class="row card-expire-month">
+                        <label>Son Kullanma Tarihi</label>
+                        <input type="text" placeholder="Aa / yy"  id="expiryDisplay" readonly>
+                    </div>
+
+                </div>
+
+                <div class="row card-cvv">
+                    <label>Güvenlik Kodu</label>
+                    <input type="text" placeholder="CVV" id="cvvDisplay" readonly>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="total-container">
+        <div class="total-card">
+            <div class="total-content">
+                <div class="premium-logo">
+                    <img src="images/Birseysel.png" >
+                    <h2>Premium <span id="selectedText"> Bireysel </span></h2>
+                </div>
+                <p><i class="fa-solid fa-caret-right"></i> 1 Premium hesabı</p>
+                <p><i class="fa-solid fa-caret-right"></i> 3 ay boyunca ₺59,99</p>
+                <p><i class="fa-solid fa-caret-right"></i> İstediğin zaman çevrimiçi iptal et.</p>
+
+                <span class="line2"></span>
+                <div class="total">
+                    <p>Total</p>
+                    <p>₺59,99</p>
+                </div>
+
+                <p class="bilgi-totalcontent">Ödeme yöntemin (örneğin banka veya mobil hizmet sağlayıcısı), vergi, komisyon ve/veya kararlaştırdığı bir döviz kurundan ABD Doları cinsinden eşdeğer fiyat gibi ek maliyetler talep edebilir. Bu maliyetler Spotify tarafından tahsil edilmez.</p>
+
+                <button type="submit">Ödeme Yöntemini Tamamla</button>
+      
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+ <footer class="container">
+
+        <div class="column">
+            <div class="logo"> <i class="fa-brands fa-spotify"></i> Spotify</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+
+         <div class="column">
+            <h4>Şirket</h4>
+            <a href="#">Hakkında</a>
+            <a href="#">Kariyer</a>
+            <a href="#">For the Record</a>
+        </div>
+
+        <div class="column">
+            <h4>Planlar</h4>
+            <a href="#">Premium Bireysel</a>
+            <a href="#">Premium Duo</a>
+            <a href="#">Premium Aile</a>
+            <a href="#">Premium Öğrenci</a>
+        </div>
+
+        <div class="column">
+            <h4>Topluluklar</h4>
+            <a href="#">Sanatçılar İçin</a>
+            <a href="#">Geliştiriciler</a>
+            <a href="#">Reklam</a>
+            <a href="#">Yatırımcılar</a>
+            <a href="#">Satıcılar</a>
+
+        </div>
+    </footer>
+
+     <div class="copyright">
+       &copy; 2023 AsmrProg Channel. All Rights Reserved.
+    </div>
+
+
+
+<script src="script.js"></script>
+    
+</body>
+</html>
